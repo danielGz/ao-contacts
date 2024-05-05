@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "fa604359-0b57-4e6e-ba84-0398b821d477",
+		"name": "accel-one",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "720768"
+	},
+	"item": [
+		{
+			"name": "Get All Contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8000/contacts"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Contact By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8000/contacts/7eca8663-f50e-488c-a241-f24bbb2fb799"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane.doe@example.com\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/contacts"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Contact By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8000/contacts/{id}"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Contact By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Jane Williams\",\n  \"email\": \"jane.doe@example.com\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/contacts/7eca8663-f50e-488c-a241-f24bbb2fb799"
+			},
+			"response": []
+		}
+	]
+}

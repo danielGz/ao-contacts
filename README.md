@@ -14,6 +14,11 @@ or
 go run main.go
 ```
 
+Generate random contacts to test the API with:
+```shell
+./generate-contacts.sh
+```
+
 ## Features
 
 - Logging
